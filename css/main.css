@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    color: white;
+    background: #ebf2f5;
+    /* a cor deveria ser branca*/
+    
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+
+body, input, button, textarea {
+  font: 400 18px/1 'nunito', sans-serif;
+}
+
+
+
+
+
+
+
+
+
