@@ -1,4 +1,4 @@
-let options = {
+const options = {
     dragging: false,
     touchZoom: false,
     doubleClickZoom: false,
@@ -8,7 +8,7 @@ let options = {
 
 //crete map
 
-let map = L.map('mapid', options).setView([-25.5000668,-49.2740054], 15);
+const map = L.map('mapid', options).setView([-25.5000668,-49.2740054], 15);
 
 //create and add tileLayer
 
@@ -32,10 +32,10 @@ const icon = L.icon({
 L.marker([-25.5000668,-49.2740054], { icon }).addTo(map);
   
 function selectimage(event) {
-    let button = event.currentTarget
+    const button = event.currentTarget
 
     // remover todas as classes .active
-    let buttons = document.querySelectorAll(".images button")
+    const buttons = document.querySelectorAll(".images button")
     console.log(buttons)
     buttons.forEach(removeActiveClass)
 
@@ -44,8 +44,8 @@ function selectimage(event) {
     }
 
     // selecionar a image clicada
-    let image = button.children[0]
-    let imageContainer = document.querySelector(".orphanage-details > img")
+    const image = button.children[0]
+    const imageContainer = document.querySelector(".orphanage-details > img")
 
     // atualizar o container de image
     imageContainer.src = image.src

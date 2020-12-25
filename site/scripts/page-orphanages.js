@@ -1,3 +1,4 @@
+/*
 //crete map
 
 const map = L.map('mapid').setView([-25.5000668,-49.2740054], 15);
@@ -31,3 +32,18 @@ L
     .marker([-25.5000668,-49.2740054], { icon })
     .addTo(map)
     .bindPopup(popup)
+*/
+
+class SideBarAnimator {
+    constructor() {
+        console.log("animator instantiated");
+        this.sidebox = document.getElementsByClassName("sidebox-left")[0]
+    }
+    execute() {
+        this.sidebox.addEventListener("mouseover", (e) => console.log('mouseover'))
+    }
+
+}
+
+s = new SideBarAnimator();
+s.execute();
